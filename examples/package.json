@@ -1,0 +1,20 @@
+{
+  "name": "example-app",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma run"
+  },
+  "license": "Apache License, 2.0",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "karma": "^0.12.37",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-coffee-preprocessor": "^0.2.1",
+    "karma-mocha": "^0.2.0",
+    "karma-ng-html2js-preprocessor": "^0.1.2",
+    "mocha": "^2.2.5"
+  }
+}

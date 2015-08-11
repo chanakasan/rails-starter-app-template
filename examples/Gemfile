@@ -1,0 +1,17 @@
+source 'https://rubygems.org'
+
+
+gem 'rails', '4.2.3'
+gem 'sqlite3'
+
+# assets
+gem 'jquery-rails'
+gem 'turbolinks'
+
+group :development do
+end
+
+group :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+end
