@@ -1,4 +1,10 @@
 module NpmHelper
+  def npm_init_dev
+    create_package_json
+    create_karma_conf
+    npm_install
+  end
+
   def create_package_json
     copy_file 'examples/package.json', 'package.json'
   end
