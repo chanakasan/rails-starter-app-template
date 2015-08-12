@@ -40,8 +40,8 @@ run_brower_test() {
 main() {
   setup
   run_unit_tests
-  run_karma_js_tests
   run_brower_test
+  run_karma_js_tests
   echo All tests finished!
 }
 

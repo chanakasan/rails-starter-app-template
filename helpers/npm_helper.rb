@@ -1,6 +1,8 @@
 module NpmHelper
   def npm_init_dev
     create_package_json
+    run "echo node_modules >> .gitignore"
+
     create_karma_conf
     npm_install
   end

@@ -28,6 +28,8 @@ module BowerHelper
 
   def bower_init
     add_bower_components_path_in_assets_initializer
+    run "echo 'app/assets/bower_components' >> .gitignore"
+
     add_bower_vendor_lines_in_application_js
     add_bower_vendor_lines_in_application_css
   end
