@@ -120,7 +120,7 @@ CODE
 
     insert_into_file APPLICATION_CSS,
       file_content,
-      before: "*= require_tree .\n"
+      before: " *= require_tree .\n"
   end
 
 
