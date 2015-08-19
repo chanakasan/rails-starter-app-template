@@ -27,6 +27,8 @@ module BowerHelper
 
 
   def bower_init
+    create_bower_json
+    create_bower_rc
     add_bower_components_path_in_assets_initializer
     run "echo 'app/assets/bower_components' >> .gitignore"
 
@@ -39,10 +41,11 @@ module BowerHelper
     copy_file 'examples/bower.json', 'bower.json'
   end
 
+  def create_bower_rc
+    copy_file 'examples/_bowerrc', '.bowerrc'
+  end
 
   def add_bower_components_path_in_assets_initializer
-    copy_file 'examples/_bowerrc', '.bowerrc'
-
     file_content = <<CODE
 Rails.application.config.assets.paths << Rails.root.join('app', 'assets', 'bower_components').to_s
 CODE
